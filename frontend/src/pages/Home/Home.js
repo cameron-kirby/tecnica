@@ -13,8 +13,8 @@ const Home = () => {
         <StyledHome>
             <div className='landing'>
                 <div className='landing-text'>
-                    <h1 className='landing-heading'>Creating customized solutions</h1>
-                    <h1 className='landing-heading'>to solve enviornmental problems</h1>
+                    <h1 className='landing-heading'>Creating customized solutions for</h1>
+                    <h1 className='landing-heading'>solving enviornmental problems</h1>
                     <p className='landing-subheading'>Delivering consistent quality products backed by transparent business practice since 1988.<br/> Providing tailor-made solutions that grow your business.</p>
                     <button className='landing-button'>Read more</button>
                 </div>
