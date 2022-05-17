@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import StyledHome from './Home.styled'
 // Icons
 import { RightArrowAlt } from 'styled-icons/boxicons-regular'
@@ -6,6 +7,7 @@ import { RightArrowAlt } from 'styled-icons/boxicons-regular'
 import services1 from '../../assets/img/home-services-1.jpg'
 import services2 from '../../assets/img/home-services-2.jpg'
 import services3 from '../../assets/img/home-services-3.jpg'
+import why from '../../assets/img/home-why.jpg'
 
 const Home = () => {
 
@@ -14,7 +16,7 @@ const Home = () => {
             <section className='landing'>
                 <div className='landing-text'>
                     <h1 className='landing-heading'>Creating customized solutions for</h1>
-                    <h1 className='landing-heading'>solving enviornmental problems</h1>
+                    <h1 className='landing-heading'>solving environmental problems</h1>
                     <p className='landing-subheading'>Delivering consistent quality products backed by transparent business practice since 1988.<br/> Providing tailor-made solutions that grow your business.</p>
                     <button className='landing-button'>Read more</button>
                 </div>
@@ -24,7 +26,7 @@ const Home = () => {
             </section>
             <section className='cutaway'>
                 <div className='cutaway-text'>
-                    <h2>We are a leading enviornmental service provider</h2>
+                    <h2>We are a leading environmental service provider</h2>
                 </div>
             </section>
             <section className='our-services'>
@@ -40,7 +42,7 @@ const Home = () => {
                             our company serves our clients’ needs in a professional and timely manner.
                         </p>
                         <div className='item-link'>
-                            <a href='#' >Learn more<RightArrowAlt/></a>
+                            <Link to="/">Learn more<RightArrowAlt/></Link>
                         </div>
                     </div>
                     <div className='item-image'>
@@ -56,7 +58,7 @@ const Home = () => {
                         <p>Tecnica Environmental Services has expertly managed and executed more than 3,000 asbestos, lead abatement and mold remediation projects, which is the equivalent of more than three million hours of work. We are known for executing unique asbestos, lead abatement and mold remediation projects under challenging circumstances delivering on time and on budget.
                         </p>
                         <div className='item-link'>
-                            <a href='#' >Learn more<RightArrowAlt/></a>
+                            <Link to="/">Learn more<RightArrowAlt/></Link>
                         </div>
                     </div>
                 </div>
@@ -66,12 +68,43 @@ const Home = () => {
                         <p>Tecnica Environmental Services has assisted a wide-range of clients in the removal of materials for disposal at sub-title D landfills and backfilling the excavations with virgin stone. We have completed this type of work as part of both asbestos abatement and selective demolition projects.
                         </p>
                         <div className='item-link'>
-                            <a href='#' >Learn more<RightArrowAlt/></a>
+                            <Link to="/">Learn more<RightArrowAlt/></Link>
                         </div>
                     </div>
                     <div className='item-image'>
                         <img src={services3} alt=''></img>
                     </div>
+                </div>
+            </section>
+            <section className='why'>
+                <div className='why-heading'>
+                    <h2>Why</h2>
+                    <h2>Tecnica?</h2>
+                </div>
+                <div className='row'>
+                    <h3>END-TO-END SOLUTIONS</h3>
+                    <p>Working with you as part of your extended team, we get to know your needs and your customer’s challenges, anticipating trends, meeting future demands, and thus we can help you identify and create the precise solutions that you and they require. It’s mainly about providing a service. We need to act fast & in a wise way, providing efficient solutions for our customers.</p>
+                </div>
+                <div className='row-image'>
+                    <img src={why} alt=''></img>
+                </div>
+                <div className='row-three-column'>
+                    <div className='column'>
+                        <h3>END-TO-END SOLUTIONS</h3>
+                        <p>Working with you as part of your extended team, we get to know your needs and your customer’s challenges, anticipating trends, meeting future demands, and thus we can help you identify and create the precise solutions that you and they require. It’s mainly about providing a service. We need to act fast & in a wise way, providing efficient solutions for our customers.</p>
+                    </div>
+                    <div className='column'>
+                        <h3>END-TO-END SOLUTIONS</h3>
+                        <p>Working with you as part of your extended team, we get to know your needs and your customer’s challenges, anticipating trends, meeting future demands, and thus we can help you identify and create the precise solutions that you and they require. It’s mainly about providing a service. We need to act fast & in a wise way, providing efficient solutions for our customers.</p>
+                    </div>
+                    <div className='column'>
+                        <h3>END-TO-END SOLUTIONS</h3>
+                        <p>Working with you as part of your extended team, we get to know your needs and your customer’s challenges, anticipating trends, meeting future demands, and thus we can help you identify and create the precise solutions that you and they require. It’s mainly about providing a service. We need to act fast & in a wise way, providing efficient solutions for our customers.</p>
+                    </div>
+                </div>
+                <div className='row'>
+                    <h3>END-TO-END SOLUTIONS</h3>
+                    <p>Working with you as part of your extended team, we get to know your needs and your customer’s challenges, anticipating trends, meeting future demands, and thus we can help you identify and create the precise solutions that you and they require. It’s mainly about providing a service. We need to act fast & in a wise way, providing efficient solutions for our customers.</p>
                 </div>
             </section>
         </StyledHome>

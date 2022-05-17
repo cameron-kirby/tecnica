@@ -144,6 +144,50 @@ const StyledHome = styled.div`
             }  
         }
     }
+
+    .why {
+        padding: 100px var(--gutter-width);
+        .why-heading {
+            h2 {
+                font-size: 7rem;
+                line-height: 3rem;
+            }
+        }
+
+        .row {
+            padding: 5% 0;
+        }
+
+        .row-image {
+
+            img {
+                width: 100%;
+                height: 40vh;
+                object-fit: cover;
+            }
+        }
+
+        .row-three-column {
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid var(--border);
+
+            div:nth-child(1)  {
+                width: 28%;
+                padding: 3% 5% 5% 0;
+            }
+            div:nth-child(2) {
+                width: 44%;
+                padding: 3% 5% 5% 5%;
+                border-left: 1px solid var(--border);
+                border-right: 1px solid var(--border);
+            }
+            div:nth-child(3)  {
+                width: 28%;
+                padding: 3% 0% 5% 5%;
+            }
+        }
+    }
 `
 
 export default StyledHome
