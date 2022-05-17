@@ -11,23 +11,23 @@ const Home = () => {
 
     return (
         <StyledHome>
-            <div className='landing'>
+            <section className='landing'>
                 <div className='landing-text'>
                     <h1 className='landing-heading'>Creating customized solutions for</h1>
                     <h1 className='landing-heading'>solving enviornmental problems</h1>
                     <p className='landing-subheading'>Delivering consistent quality products backed by transparent business practice since 1988.<br/> Providing tailor-made solutions that grow your business.</p>
                     <button className='landing-button'>Read more</button>
                 </div>
-            </div>
-            <div className='statement'>
+            </section>
+            <section className='statement'>
                 <h2>We <span className="bold">constantly work</span> towards developing a wider range of <span className='highlight'>cost-effective solutions</span> for our valued customers so as to give <span className="bold">maximum value</span> to their products & business.</h2>
-            </div>
-            <div className='cutaway'>
+            </section>
+            <section className='cutaway'>
                 <div className='cutaway-text'>
                     <h2>We are a leading enviornmental service provider</h2>
                 </div>
-            </div>
-            <div className='our-services'>
+            </section>
+            <section className='our-services'>
                 <h2 className='services-heading'>Our<br/>Services</h2>
                 <div className='services-item-left'>
                     <div className='item-text'>
@@ -73,7 +73,7 @@ const Home = () => {
                         <img src={services3} alt=''></img>
                     </div>
                 </div>
-            </div>
+            </section>
         </StyledHome>
     )
 }
