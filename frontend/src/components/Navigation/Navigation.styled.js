@@ -32,11 +32,26 @@ const StyledNavigation = styled.nav`
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
+            align-items: baseline;
 
             a {
                 color: var(--black);
                 text-decoration: none;
                 padding-left: 20px;
+            }
+
+            .contact-button {
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                border-radius: 16px;
+                padding: 3px 12px;
+                background-color: var(--main);
+                color: var(--white);
+                svg {
+                    padding-left: 6px;
+                    width: 1rem;
+                }
             }
         }
     }
