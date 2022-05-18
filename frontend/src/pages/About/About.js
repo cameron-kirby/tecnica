@@ -2,13 +2,17 @@ import React from 'react'
 import StyledAbout from './About.styled'
 // Images
 import sergio from '../../assets/img/about-sergio.jpg'
+import aboutLanding from '../../assets/img/about-landing.jpg'
 
 const About = () => {
 
     return (
         <StyledAbout>
             <section className='about-landing'>
-                <h1 className='heading'>About.</h1>
+                <div className='heading-container'>
+                    <h1 className='heading'>About.</h1>
+                    <img src={aboutLanding} alt=''/>
+                </div>
                 <div className='landing-text'>
                     <h2>Tecnica Environmental Services</h2>
                     <p>Tecnica Environmental Services, Inc. is a full remediation  firm specializing in soil excavation, UST decommissioning, site-preparation and abatement services.</p>

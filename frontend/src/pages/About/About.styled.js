@@ -16,20 +16,35 @@ const StyledAbout = styled.div`
         @media screen and ${devices.tabletP} {
             flex-direction: row;
         }
-
-        .heading {
+        .heading-container {
+            display: flex;
+            flex-direction: column;
             width: 100%;
-            font-size: var(--mobile-heading-size);
-            line-height: 4.5rem;
-            margin: 0 0 20px;
-
             @media screen and ${devices.tabletP} {
                 width: 50%;
-                font-size: var(--heading-size);
-                line-height: 7.5rem;
-                margin: 0 0 50px;
+            }
+            .heading {
+                font-size: var(--mobile-heading-size);
+                line-height: 4.5rem;
+                margin: 0 0 20px;
+
+                @media screen and ${devices.tabletP} {
+                    font-size: var(--heading-size);
+                    line-height: 7.5rem;
+                    margin: 0 0 50px;
+                }
+            }
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+
+                @media screen and ${devices.tabletP} {
+                    height: 50%;
+                }
             }
         }
+        
 
         .landing-text {
             width: 100%;
