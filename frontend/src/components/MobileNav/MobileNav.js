@@ -59,12 +59,12 @@ const MobileNav = ({ navOpen, setNavOpen }) => {
             <div className="overlay">
                 <div className="overlay-content">
                     <div className="menu-items">
-                    <Link to="/" className={(location.pathname==="/") ? "isActive": ""}>Home<DiagonalArrowRightUp/></Link>
-                    <Link to="/about" className={(location.pathname==="/about") ? "isActive": ""}>About<DiagonalArrowRightUp/></Link>
-                    <Link to="/services" className={(location.pathname==="/services") ? "isActive": ""}>Services<DiagonalArrowRightUp/></Link>
-                    <Link to="/projects" className={(location.pathname==="/projects") ? "isActive": ""}>Projects<DiagonalArrowRightUp/></Link>
-                    <Link to="/news" className={(location.pathname==="/news") ? "isActive": ""}>News<DiagonalArrowRightUp/></Link>
-                    <Link to="/contact" className={(location.pathname==="/contact") ? "isActive": ""}>Contact<DiagonalArrowRightUp/></Link>
+                        <Link to="/" onClick={handleMenuToggle} className={(location.pathname==="/") ? "isActive": ""}>Home<DiagonalArrowRightUp/></Link>
+                        <Link to="/about" onClick={handleMenuToggle} className={(location.pathname==="/about") ? "isActive": ""}>About<DiagonalArrowRightUp/></Link>
+                        <Link to="/services" onClick={handleMenuToggle} className={(location.pathname==="/services") ? "isActive": ""}>Services<DiagonalArrowRightUp/></Link>
+                        <Link to="/projects" onClick={handleMenuToggle} className={(location.pathname==="/projects") ? "isActive": ""}>Projects<DiagonalArrowRightUp/></Link>
+                        <Link to="/news" onClick={handleMenuToggle} className={(location.pathname==="/news") ? "isActive": ""}>News<DiagonalArrowRightUp/></Link>
+                        <Link to="/contact" onClick={handleMenuToggle} className={(location.pathname==="/contact") ? "isActive": ""}>Contact<DiagonalArrowRightUp/></Link>
                     </div>
                 </div>
             </div>
