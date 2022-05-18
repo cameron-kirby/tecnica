@@ -1,9 +1,15 @@
 import styled from 'styled-components'
+import { devices } from '../../utils'
 
 const StyledNavigation = styled.nav`
+    display: none;
     position: fixed;
     width: 100%;
     top:0;
+
+    @media screen and ${devices.tabletP} {
+        display: block;
+    }
     .top-bar{
         background-color: var(--black);
         padding: 10px 14%;
