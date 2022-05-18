@@ -68,7 +68,7 @@ const StyledNavigation = styled.nav`
                 transition: var(--transition-length);
 
                 &:hover {
-                    background-color: var(--main-accent);
+                    background-color: var(--green-accent);
                 }
                 svg {
                     padding-left: 6px;
@@ -90,6 +90,9 @@ const StyledNavigation = styled.nav`
 
         svg {
             width: 48px;
+            path {
+                fill: var(--green);
+            }
         }
     }
 `

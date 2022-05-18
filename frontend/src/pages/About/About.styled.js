@@ -62,7 +62,7 @@ const StyledAbout = styled.div`
     }
     
     .team {
-        padding-top: 100px;
+        /* padding-top: 100px; */
         .team-container {
             padding: 50px 10px 15px;
             display: flex;

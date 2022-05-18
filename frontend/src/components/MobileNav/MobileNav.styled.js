@@ -26,6 +26,9 @@ const StyledMobileNav = styled.nav`
         .logo {
             svg {
                 width: 4rem;
+                path {
+                    fill: var(--green);
+                }
             }
         }
     }
@@ -106,7 +109,8 @@ const StyledMobileNav = styled.nav`
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--off-white);
+        background-color: var(--green);
+        background-image: linear-gradient(315deg, rgba(55, 139, 41, 0.75) 0%, rgba(116, 214, 128, 0.75) 74%);
         overflow-x: hidden;
         transform: ${({ navOpen }) => navOpen ? 'translateX(0)' : 'translateX(+100%)'};
         transition: transform .7s cubic-bezier(.23,1,.32,1);
@@ -124,7 +128,7 @@ const StyledMobileNav = styled.nav`
                 text-align: left;
                 a {
                     text-decoration: none;
-                    color: var(--blue);
+                    color: var(--white);
                     font-weight: 700;
                     font-size: 3.5rem;
                     margin: .3rem 0;
