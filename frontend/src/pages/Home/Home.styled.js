@@ -16,8 +16,12 @@ const StyledHome = styled.div`
         .landing-text {
             text-align: center;
             .landing-heading {
-                font-size: 2.75rem;
-                line-height: 2rem;
+                font-size: 2rem;
+                line-height: 2.5rem;
+                @media screen and ${devices.tabletP} {
+                    font-size: 2.75rem;
+                    line-height: 3.25rem;
+                }
             }
             .landing-subheading {
                 padding: 10px 0 39px;
@@ -39,8 +43,13 @@ const StyledHome = styled.div`
         }
         h2 {
             color: var(--text-gray);
-            font-size: 3.25rem;
-            line-height: 4.5rem;
+            font-size: 2rem;
+            line-height: 2.5rem;
+
+            @media screen and ${devices.tabletP} {
+                font-size: 3.25rem;
+                line-height: 4.5rem;
+            }
         }
 
         .bold {
@@ -77,7 +86,7 @@ const StyledHome = styled.div`
 
         .services-heading {
             font-size: var(--mobile-heading-size);
-            line-height: 5.5rem;
+            line-height: 4.5rem;
             margin: 0 0 50px;
 
             @media screen and ${devices.tabletP} {
@@ -89,10 +98,20 @@ const StyledHome = styled.div`
         .services-item-left {
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+
+            @media screen and ${devices.tabletP} {
+                flex-direction: row;
+            }
 
             .item-text {
-                width: 45%;
+                width: 100%;
+                order: 1;
+
+                @media screen and ${devices.tabletP} {
+                    width: 45%;
+                    order:0;
+                }
 
                 h3 {
                     margin: 0;
@@ -106,6 +125,7 @@ const StyledHome = styled.div`
                 }
 
                 .item-link {
+                    padding-bottom: 30px;
                     a {
                         text-decoration: none;
                         color: var(--main);
@@ -122,24 +142,40 @@ const StyledHome = styled.div`
         .services-item-right {
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+
+            @media screen and ${devices.tabletP} {
+                flex-direction: row;
+            }
 
             .item-text {
-                width: 45%;
+                width: 100%;
+
+                @media screen and ${devices.tabletP} {
+                    width: 45%;
+                }
 
                 h3 {
                     margin: 0;
                     padding-top: 50px;
-                    padding-left: 15%;
+                    @media screen and ${devices.tabletP} {
+                        padding-left: 15%;
+                    }
                 }
 
                 p {
                     margin: 0;
-                    padding: 35px 15% 35px 15%;
+                    padding: 35px 0;
+                    @media screen and ${devices.tabletP} {
+                        padding: 35px 15% 35px 15%;
+                    }
                 }
 
                 .item-link {
-                    padding-left: 15%;
+                    padding-bottom: 30px;
+                    @media screen and ${devices.tabletP} {
+                        padding-left: 15%;
+                    }
                     a {
                         text-decoration: none;
                         color: var(--main);
@@ -153,10 +189,15 @@ const StyledHome = styled.div`
             }
         }
         .item-image {
-            width: 55%;
+            width: 100%;
+
+            @media screen and ${devices.tabletP} {
+                width: 55%;
+            }
+
             img {
                 width: 100%;
-            }  
+            }
         }
     }
 
@@ -169,16 +210,13 @@ const StyledHome = styled.div`
         .why-heading {
             h2 {
                 font-size: var(--mobile-heading-size);
-                line-height: 3rem;
+                line-height: 1rem;
 
                 @media screen and ${devices.tabletP} {
                     font-size: var(--heading-size);
                     line-height: 3rem;
                 }
-            }
-
-
-            
+            }  
         }
 
         .row {
@@ -186,7 +224,6 @@ const StyledHome = styled.div`
         }
 
         .row-image {
-
             img {
                 width: 100%;
                 height: 40vh;
@@ -196,22 +233,40 @@ const StyledHome = styled.div`
 
         .row-three-column {
             display: flex;
-            flex-direction: row;
-            border-bottom: 1px solid var(--border);
+            flex-direction: column;
+
+            @media screen and ${devices.tabletP} {
+                flex-direction: row;
+                border-bottom: 1px solid var(--border);
+            }
 
             div:nth-child(1)  {
-                width: 28%;
+                width: 100%;
                 padding: 3% 5% 5% 0;
+
+                @media screen and ${devices.tabletP} {
+                    width: 28%;
+                }
             }
             div:nth-child(2) {
-                width: 44%;
-                padding: 3% 5% 5% 5%;
-                border-left: 1px solid var(--border);
-                border-right: 1px solid var(--border);
+                width: 100%;
+                padding: 3% 5% 5% 0;
+                
+                @media screen and ${devices.tabletP} {
+                    width: 44%;
+                    padding: 3% 5% 5% 5%;
+                    border-left: 1px solid var(--border);
+                    border-right: 1px solid var(--border);
+                }
             }
             div:nth-child(3)  {
-                width: 28%;
-                padding: 3% 0% 5% 5%;
+                width: 100%;
+                padding: 3% 5% 5% 0;
+
+                @media screen and ${devices.tabletP} {
+                    width: 28%;
+                    padding: 3% 0% 5% 5%;
+                }
             }
         }
     }

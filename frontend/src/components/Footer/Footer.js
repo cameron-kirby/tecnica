@@ -20,20 +20,10 @@ const Footer = () => {
                     <Link to='/'>
                         <PinOutline/>
                         <span>16W066 Jeans Rd Lemont, Illinois 60439</span>
-                        <DiagonalArrowRightUp/>
                     </Link>
                 </div>
             </div>
             <div className='nav-row'>
-                <div className='nav-column'>
-                    <h2>Pages</h2>
-                    <Link to='/'>Home<DiagonalArrowRightUp/></Link>
-                    <Link to='/'>About<DiagonalArrowRightUp/></Link>
-                    <Link to='/'>Services<DiagonalArrowRightUp/></Link>
-                    <Link to='/'>Projects<DiagonalArrowRightUp/></Link>
-                    <Link to='/'>News<DiagonalArrowRightUp/></Link>
-                    <Link to='/'>Contact<DiagonalArrowRightUp/></Link>
-                </div>
                 <div className='nav-column'>
                     <h2>Pages</h2>
                     <Link to='/'>Home<DiagonalArrowRightUp/></Link>
