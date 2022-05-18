@@ -2,7 +2,7 @@ import React from 'react'
 import StyledNavigation from './Navigation.styled'
 import { Link, useLocation } from "react-router-dom";
 // Icons
-import logo from '../../assets/tecnica-logo.svg'
+import { ReactComponent as Logo } from '../../assets/tecnica-logo.svg'
 import { Phone, Envelope } from '@styled-icons/boxicons-regular'
 import { DiagonalArrowRightUp } from 'styled-icons/evaicons-solid';
 
@@ -39,7 +39,7 @@ const Navigation = () => {
                 </div>
             </div>
             <div className='logo'>
-                <img src={logo} alt=''/>
+                <Logo/>
             </div>
         </StyledNavigation>
     )

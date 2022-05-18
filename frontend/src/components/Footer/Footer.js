@@ -41,9 +41,9 @@ const Footer = () => {
                 </div>
                 <div className='nav-column'>
                     <h2>Contact</h2>
-                    <span><Envelope/>info@tecnicaenviro.com</span>
                     <span><Phone/>(630) 655-9455</span>
                     <span><Printer/>(630) 655-3138</span>
+                    <span><Envelope/>info@tecnicaenviro.com</span>
                     
                 </div>
             </div>

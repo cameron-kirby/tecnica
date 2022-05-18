@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import StyledHome from './Home.styled'
+import { range } from "d3-array"
+import { Waves } from '../../components'
 // Icons
 import { RightArrowAlt } from 'styled-icons/boxicons-regular'
 // Images
@@ -8,6 +10,20 @@ import services1 from '../../assets/img/home-services-1.jpg'
 import services2 from '../../assets/img/home-services-2.jpg'
 import services3 from '../../assets/img/home-services-3.jpg'
 import why from '../../assets/img/home-why.jpg'
+
+const initialState = {
+    waves: [
+        {
+            id: "aabbccddeeff11223344",
+            data: range(6).map(() => Math.round(Math.random() * 10)),
+            curve: "wave",
+            color: "#ffffff",
+            direction: "up",
+            complexity: 6,
+            opacity: 100,
+        },
+    ],
+}
 
 const Home = () => {
 
@@ -19,6 +35,7 @@ const Home = () => {
                     <p className='landing-subheading'>Delivering consistent quality products backed by transparent business practice since 1988.<br/> Providing tailor-made solutions that grow your business.</p>
                     <button className='landing-button'>Read more</button>
                 </div>
+                <Waves waves={initialState.waves} />
             </section>
             <section className='statement'>
                 <h2>We <span className="bold">constantly work</span> towards developing a wider range of <span className='highlight'>cost-effective solutions</span> for our valued customers so as to give <span className="bold">maximum value</span> to their products & business.</h2>

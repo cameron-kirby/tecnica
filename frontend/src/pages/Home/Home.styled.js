@@ -5,16 +5,27 @@ import cutawayBG from '../../assets/img/home-cutaway-bg.jpg'
 
 const StyledHome = styled.div`
     .landing {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
-        background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(${landingBG});
+        height: 90vh;
+        background-color: #378b29;
+        background-image: linear-gradient(315deg, rgba(55, 139, 41, 0.75) 0%, rgba(116, 214, 128, 0.75) 74%), url(${landingBG});
         background-size: cover;
         background-attachment: fixed;
 
+        @media screen and ${devices.tabletP} {
+            height: 100vh;
+        }
+
         .landing-text {
+            color: var(--white);
+            padding: 0 var(--mobile-gutter-width) 0;
             text-align: center;
+            @media screen and ${devices.tabletP} {
+                padding: 0 var(--gutter-width) 5%;
+            }
             .landing-heading {
                 font-size: 2rem;
                 line-height: 2.5rem;
@@ -25,21 +36,31 @@ const StyledHome = styled.div`
             }
             .landing-subheading {
                 padding: 10px 0 39px;
+                font-size: 1rem;
+                font-weight: 900;
             }
             .landing-button {
                 width: 165px;
                 height: 55px;
-                border: none;
-                background-color: var(--black);
+                border: 4px solid var(--white);
+                border-radius: 13px;
+                background-color: transparent;;
                 color: var(--white);
+                font-size: 1rem;
+                font-weight: 900;
             }
+        }
+        svg {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
         }
     }
     .statement {
         padding: 50px var(--mobile-gutter-width);
 
         @media screen and ${devices.tabletP} {
-            padding: 135px var(--gutter-width);
+            padding: 70px var(--gutter-width) 135px;
         }
         h2 {
             color: var(--text-gray);
@@ -57,7 +78,7 @@ const StyledHome = styled.div`
         }
 
         .highlight {
-            background-color: var(--black);
+            background-color: var(--green);
             color: var(--white);
         }
     }

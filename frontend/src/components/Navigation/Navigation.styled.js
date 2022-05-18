@@ -6,6 +6,7 @@ const StyledNavigation = styled.nav`
     position: fixed;
     width: 100%;
     top:0;
+    z-index:999;
 
     @media screen and ${devices.tabletP} {
         display: block;
@@ -62,7 +63,7 @@ const StyledNavigation = styled.nav`
                 align-items: center;
                 border-radius: 16px;
                 padding: 3px 12px;
-                background-color: var(--main);
+                background-color: var(--green);
                 color: var(--white);
                 transition: var(--transition-length);
 
@@ -87,7 +88,7 @@ const StyledNavigation = styled.nav`
         display: flex;
         align-items: center;
 
-        img {
+        svg {
             width: 48px;
         }
     }
