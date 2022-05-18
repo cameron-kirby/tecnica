@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import StyledProject from './Project.styled'
+import { LeftArrowAlt } from 'styled-icons/boxicons-regular'
 
 const Project = () => {
     const [content, setContent] = useState("");
@@ -15,7 +16,12 @@ const Project = () => {
 
     return (
         <StyledProject>
-            <ReactMarkdown children={content} />
+            <Link to='/projects' className='back'><LeftArrowAlt/>Back to projects</Link>
+            <ReactMarkdown
+            transformImageUri={uri =>
+                uri.startsWith("http") ? uri : `${process.env.PUBLIC_URL}/projects/${projectName}${uri}`
+            }
+            children={content} />
         </StyledProject>
     )
 }

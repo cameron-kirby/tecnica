@@ -13,7 +13,7 @@ const StyledProjects = styled.div`
             line-height: 4.5rem;
             margin: 0 0 20px;
 
-             @media screen and ${devices.tabletP} {
+            @media screen and ${devices.tabletP} {
                 font-size: var(--heading-size);
                 line-height: 7.5rem;
                 margin: 0 0 50px;
