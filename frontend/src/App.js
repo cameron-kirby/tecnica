@@ -6,6 +6,8 @@ import { Routes, Route } from "react-router-dom";
 import { MobileNav, Navigation, Footer, ScrollToTop } from './components'
 // Pages
 import { Home, About, Projects, NoMatch } from './pages'
+// Project
+import Project from './pages/Projects/Project/Project'
 
 function App() {
     const [navOpen, setNavOpen] = useState(false); // Nav state
@@ -19,7 +21,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/projects" element={<Projects />} />
-                    <Route path="/projects/project-1" element={<About />}/> 
+                    <Route path="/projects/:projectName" element={<Project />}/> 
                     <Route path="*" element={<NoMatch />} />
                 </Routes>
             </ScrollToTop>
