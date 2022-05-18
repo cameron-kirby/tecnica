@@ -35,9 +35,19 @@ const StyledNavigation = styled.nav`
             align-items: baseline;
 
             a {
-                color: var(--black);
+                color: var(--text-gray);
                 text-decoration: none;
                 padding-left: 20px;
+                font-weight: 500;
+                transition: var(--transition-length);
+
+                &:hover {
+                    color: var(--black);
+                }
+            }
+
+            .isActive {
+                color: var(--black);
             }
 
             .contact-button {
@@ -48,6 +58,11 @@ const StyledNavigation = styled.nav`
                 padding: 3px 12px;
                 background-color: var(--main);
                 color: var(--white);
+                transition: var(--transition-length);
+
+                &:hover {
+                    background-color: var(--main-accent);
+                }
                 svg {
                     padding-left: 6px;
                     width: 1rem;

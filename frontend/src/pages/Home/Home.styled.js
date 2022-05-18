@@ -81,7 +81,7 @@ const StyledHome = styled.div`
 
                 h3 {
                     margin: 0;
-                    padding-top: 50px;
+                    padding-top: 7%;
                     padding-right: 20%;
                 }
 

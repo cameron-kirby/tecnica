@@ -1,12 +1,13 @@
 import React from 'react'
 import StyledNavigation from './Navigation.styled'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // Icons
 import logo from '../../assets/tecnica-logo.svg'
 import { Phone, Envelope } from '@styled-icons/boxicons-regular'
 import { DiagonalArrowRightUp } from 'styled-icons/evaicons-solid';
 
 const Navigation = () => {
+    let location = useLocation();
 
     return (
         <StyledNavigation>
@@ -24,11 +25,11 @@ const Navigation = () => {
             </div>
             <div className='bottom-bar'>
                 <div className='menu'>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About us</Link>
-                    <Link to="/services">Services</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/news">News</Link>
+                    <Link to="/" className={(location.pathname==="/") ? "isActive": ""}>Home</Link>
+                    <Link to="/about" className={(location.pathname==="/about") ? "isActive": ""}>About</Link>
+                    <Link to="/services" className={(location.pathname==="/services") ? "isActive": ""}>Services</Link>
+                    <Link to="/projects" className={(location.pathname==="/projects") ? "isActive": ""}>Projects</Link>
+                    <Link to="/news" className={(location.pathname==="/news") ? "isActive": ""}>News</Link>
                     <Link to="/contact">
                         <div className='contact-button'>
                             <span>Contact</span>

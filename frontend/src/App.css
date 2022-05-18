@@ -8,10 +8,13 @@
     --off-white: #F5F5F7;
     --border: #D2D2D2;
     --main: #1B4E9B;
+    --main-accent: #1aa7ff;
 
     --text-gray: #858585;
     /* Measurements */
     --gutter-width: 14%;
+    /* Animation */
+    --transition-length: 500ms;
 }
 
 .App {
