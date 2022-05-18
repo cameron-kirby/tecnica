@@ -32,7 +32,11 @@ const StyledHome = styled.div`
         }
     }
     .statement {
-        padding: 135px var(--gutter-width);
+        padding: 50px var(--mobile-gutter-width);
+
+        @media screen and ${devices.tabletP} {
+            padding: 135px var(--gutter-width);
+        }
         h2 {
             color: var(--text-gray);
             font-size: 3.25rem;
@@ -65,12 +69,22 @@ const StyledHome = styled.div`
     }
 
     .our-services {
-        padding: 100px var(--gutter-width);
+        padding: 50px var(--mobile-gutter-width);
+
+        @media screen and ${devices.tabletP} {
+            padding: 100px var(--gutter-width);
+        }
 
         .services-heading {
-            font-size: 7rem;
-            line-height: 7.5rem;
+            font-size: var(--mobile-heading-size);
+            line-height: 5.5rem;
             margin: 0 0 50px;
+
+            @media screen and ${devices.tabletP} {
+                font-size: var(--heading-size);
+                line-height: 7.5rem;
+                margin: 0 0 50px;
+            }
         }
         .services-item-left {
             width: 100%;
@@ -147,12 +161,24 @@ const StyledHome = styled.div`
     }
 
     .why {
-        padding: 100px var(--gutter-width);
+        padding: 50px var(--mobile-gutter-width);
+
+        @media screen and ${devices.tabletP} {
+            padding: 100px var(--gutter-width);
+        }
         .why-heading {
             h2 {
-                font-size: 7rem;
+                font-size: var(--mobile-heading-size);
                 line-height: 3rem;
+
+                @media screen and ${devices.tabletP} {
+                    font-size: var(--heading-size);
+                    line-height: 3rem;
+                }
             }
+
+
+            
         }
 
         .row {

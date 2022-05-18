@@ -13,8 +13,13 @@
     --text-gray: #858585;
     /* Measurements */
     --gutter-width: 14%;
+    --mobile-gutter-width: 7%;
     /* Animation */
     --transition-length: 500ms;
+    /* Typography */
+    --heading-size: 7rem;
+    /* Mobile Typography */
+    --mobile-heading-size: 5rem;
 }
 
 .App {

@@ -46,10 +46,6 @@ const StyledMobileNav = styled.nav`
             else {return("(0)")}
         }};
         transition: .3s ease-in-out;
-        @media (max-width:481px)  { 
-            /* smartphones, iPhone, portrait 480x320 phones */ 
-            right: var(--mobile-margin-width);
-        }
         span {
             // display: block;
             position: absolute;
