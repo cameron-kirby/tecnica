@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import StyledFooter from './Footer.styled'
 // Icons
-import { ReactComponent as Logo } from '../../assets/tecnica-logo-white.svg'
-import { ReactComponent as CKLogo } from '../../assets/ck-logo-white.svg'
+import { ReactComponent as Logo } from '../../assets/tecnica-logo.svg'
+import { ReactComponent as CKLogo } from '../../assets/ck-logo.svg'
 import { DiagonalArrowRightUp } from 'styled-icons/evaicons-solid';
 import { PinOutline } from 'styled-icons/evaicons-outline';
 import { Phone, Envelope, Printer } from '@styled-icons/boxicons-regular'

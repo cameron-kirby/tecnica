@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { devices } from '../../utils'
-import landingBG from '../../assets/img/home-landing-bg.jpg'
-import cutawayBG from '../../assets/img/home-cutaway-bg.jpg'
+import landingBG from '../../assets/img/home/home-landing-bg.jpg'
+import cutawayBG from '../../assets/img/home/home-cutaway-bg.jpg'
 
 const StyledHome = styled.div`
     .landing {

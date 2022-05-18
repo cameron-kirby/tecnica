@@ -6,10 +6,10 @@ import { Waves } from '../../components'
 // Icons
 import { RightArrowAlt } from 'styled-icons/boxicons-regular'
 // Images
-import services1 from '../../assets/img/home-services-1.jpg'
-import services2 from '../../assets/img/home-services-2.jpg'
-import services3 from '../../assets/img/home-services-3.jpg'
-import why from '../../assets/img/home-why.jpg'
+import services1 from '../../assets/img/home/home-services-1.jpg'
+import services2 from '../../assets/img/home/home-services-2.jpg'
+import services3 from '../../assets/img/home/home-services-3.jpg'
+import why from '../../assets/img/home/home-why.jpg'
 
 const initialState = {
     waves: [

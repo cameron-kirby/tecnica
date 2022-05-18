@@ -25,6 +25,9 @@ const StyledFooter = styled.footer`
                 @media screen and ${devices.tabletP} {
                     width: 4rem;
                 }
+                path {
+                    fill: var(--white);
+                }
             }
             h2 {
                 padding-left: 20px;

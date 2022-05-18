@@ -1,8 +1,8 @@
 import React from 'react'
 import StyledAbout from './About.styled'
 // Images
-import sergio from '../../assets/img/about-sergio.jpg'
-import aboutLanding from '../../assets/img/about-landing.jpg'
+import sergio from '../../assets/img/about/about-sergio.jpg'
+import aboutLanding from '../../assets/img/about/about-landing.jpg'
 
 const About = () => {
 
