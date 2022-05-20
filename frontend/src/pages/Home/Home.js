@@ -58,7 +58,7 @@ const Home = () => {
                             our company serves our clients’ needs in a professional and timely manner.
                         </p>
                         <div className='item-link'>
-                            <Link to="/">Learn more<RightArrowAlt/></Link>
+                            <Link to="/services/soil">Learn more<RightArrowAlt/></Link>
                         </div>
                     </div>
                     <div className='item-image'>
@@ -74,7 +74,7 @@ const Home = () => {
                         <p>Tecnica Environmental Services has expertly managed and executed more than 3,000 asbestos, lead abatement and mold remediation projects, which is the equivalent of more than three million hours of work. We are known for executing unique asbestos, lead abatement and mold remediation projects under challenging circumstances delivering on time and on budget.
                         </p>
                         <div className='item-link'>
-                            <Link to="/">Learn more<RightArrowAlt/></Link>
+                            <Link to="/services/abatement">Learn more<RightArrowAlt/></Link>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ const Home = () => {
                         <p>Tecnica Environmental Services has assisted a wide-range of clients in the removal of materials for disposal at sub-title D landfills and backfilling the excavations with virgin stone. We have completed this type of work as part of both asbestos abatement and selective demolition projects.
                         </p>
                         <div className='item-link'>
-                            <Link to="/">Learn more<RightArrowAlt/></Link>
+                            <Link to="/services/demolition">Learn more<RightArrowAlt/></Link>
                         </div>
                     </div>
                     <div className='item-image'>

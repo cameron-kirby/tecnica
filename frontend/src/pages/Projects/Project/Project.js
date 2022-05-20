@@ -12,7 +12,7 @@ const Project = () => {
         fetch(`${process.env.PUBLIC_URL}/projects/${projectName}/project.md`)
             .then((res) => res.text())
             .then((text) => setContent(text));
-    }, []);
+    }, [projectName]);
 
     return (
         <StyledProject>
