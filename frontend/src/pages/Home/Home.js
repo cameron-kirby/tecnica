@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import StyledHome from './Home.styled'
 import { range } from "d3-array"
-import { Waves } from '../../components'
+import { Waves, AnimatedPage } from '../../components'
+
 // Icons
 import { RightArrowAlt } from 'styled-icons/boxicons-regular'
 // Images
@@ -28,6 +29,7 @@ const initialState = {
 const Home = () => {
 
     return (
+        <AnimatedPage>
         <StyledHome>
             <section className='landing'>
                 <div className='landing-text'>
@@ -124,6 +126,7 @@ const Home = () => {
                 </div>
             </section>
         </StyledHome>
+        </AnimatedPage>
     )
 }
 

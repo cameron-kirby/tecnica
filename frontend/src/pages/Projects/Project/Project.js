@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { AnimatedPage } from '../../../components'
 import { Link, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import StyledProject from './Project.styled'
@@ -15,6 +16,7 @@ const Project = () => {
     }, [projectName]);
 
     return (
+        <AnimatedPage>
         <StyledProject>
             <Link to='/projects' className='back'><LeftArrowAlt/>Back to projects</Link>
             <ReactMarkdown
@@ -23,6 +25,7 @@ const Project = () => {
             }
             children={content} />
         </StyledProject>
+        </AnimatedPage>
     )
 }
 

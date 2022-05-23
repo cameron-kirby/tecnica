@@ -1,5 +1,6 @@
 import React from 'react'
 import StyledAbout from './About.styled'
+import { AnimatedPage } from '../../components'
 // Images
 import sergio from '../../assets/img/about/about-sergio.jpg'
 import aboutLanding from '../../assets/img/about/about-landing.jpg'
@@ -7,6 +8,7 @@ import aboutLanding from '../../assets/img/about/about-landing.jpg'
 const About = () => {
 
     return (
+        <AnimatedPage>
         <StyledAbout>
             <section className='about-landing'>
                 <div className='heading-container'>
@@ -71,6 +73,7 @@ const About = () => {
                 <p>The health and safety of all concerned parties is always our top priority.  Only the strictest safety and medical surveillance measures are utilized to ensure the protection of the workers, public and outside environment.  All our strengths give you, the client, unmatched quality and service.  It is not enough to simply offer a solution; it is our goal to provide the most effective and efficient solution for each encounter.</p>
             </section>
         </StyledAbout>
+        </AnimatedPage>
     )
 }
 

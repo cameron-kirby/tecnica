@@ -2,12 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import StyledProjects from './Projects.styled'
 import { projectIndex } from './Project/projectIndex'
+import { AnimatedPage } from '../../components'
 // Icons
 import { RightArrowAlt } from 'styled-icons/boxicons-regular'
 
 const Projects = () => {
 
     return (
+        <AnimatedPage>
         <StyledProjects>
             <div className='heading-container'>
                 <h1 className='heading'>Projects.</h1>
@@ -31,6 +33,7 @@ const Projects = () => {
                 }
             </div>
         </StyledProjects>
+        </AnimatedPage>
     )
 }
 

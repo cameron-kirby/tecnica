@@ -1,11 +1,13 @@
 import React from 'react'
 import StyledServices from './Services.styled'
+import { AnimatedPage } from '../../components'
 // Images
 import servicesLanding from '../../assets/img/about/about-landing.jpg'
 
 const Services = () => {
 
     return (
+        <AnimatedPage>
         <StyledServices>
             <section className='services-landing'>
                 <h1 className='heading'>Services.</h1>
@@ -21,6 +23,7 @@ const Services = () => {
                 
             </section>
         </StyledServices>
+        </AnimatedPage>
     )
 }
 
