@@ -29,7 +29,7 @@ const initialState = {
 const Home = () => {
 
     return (
-        <AnimatedPage>
+        <AnimatedPage variation='top'>
         <StyledHome>
             <section className='landing'>
                 <div className='landing-text'>

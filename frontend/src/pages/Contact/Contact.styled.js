@@ -9,22 +9,40 @@ const StyledContact = styled.div`
     }
     .contact-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+
+        @media screen and ${devices.tabletP} {
+            flex-direction: row;
+        }
 
         .contact-column {
-            width: 50%;
-            padding: 12px 50px 60px;
-            background-color: var(--green);
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            
+            @media screen and ${devices.tabletP} {
+                width: 50%;
+                padding: 12px 50px 60px;
+                background-color: var(--green);
+            }
 
             h2 {
-                font-size: 2.5rem;
-                color: var(--white);
+                font-size: 3.5rem;
+                color: var(--black);
+                @media screen and ${devices.tabletP} {
+                    font-size: 2.5rem;
+                    color: var(--white);
+                }
             }
         }
 
         .contact-form {
-            width: 50%;
-            padding: 12px 50px 60px;
+            width: 100%;
+
+            @media screen and ${devices.tabletP} {
+                width: 50%;
+                padding: 12px 50px 60px;
+            }
 
             h3 {
                 padding: 30px 0;
@@ -33,16 +51,22 @@ const StyledContact = styled.div`
 
             .input-row {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: space-between;
                 padding-bottom: 15px;
+
+                @media screen and ${devices.tabletP} {
+                    flex-direction: row;
+                }
                 
                 .half-width {
-                    width: 48%;
+                    width: 100%;
                     display: flex;
                     flex-direction: column;
-                    
-                    
+
+                    @media screen and ${devices.tabletP} {
+                        width: 48%;
+                    }
                 }
             }
 
@@ -88,11 +112,22 @@ const StyledContact = styled.div`
             .contact-info {
                 padding: 25px 0 0;
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
                 width: 60%;
+
+                @media screen and ${devices.tabletP} {
+                    flex-direction: row;
+                }
                 .item {
                     display: flex;
                     flex-direction: column;
+                    padding-bottom: 15px;
+                    
+                    @media screen and ${devices.tabletP} {
+                        padding: 0;
+                    }
+                    
                     .label {
                         font-size: 0.8rem;
                     }
